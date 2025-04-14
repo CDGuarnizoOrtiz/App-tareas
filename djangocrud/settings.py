@@ -126,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 if not DEBUG: 
-    STATTIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
+    STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 LOGIN_URL = '/signin/'
